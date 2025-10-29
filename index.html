@@ -3,332 +3,101 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ENFIELD Conference 2026 — International Conference on AI</title>
-  <meta name="description" content="ENFIELD Conference 2026 — Call for Papers, Program, Keynotes, Venue, and Registration." />
-  <meta name="theme-color" content="#0e4cab" />
-  <style>
-    :root{
-      --bg:#0b1220; --panel:#0f1628; --text:#e6edf6; --muted:#9fb0c2; --brand:#4ea3ff; --link:#7dd3fc; --line:rgba(255,255,255,.08);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial}
-    a{color:var(--link);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1200px;margin:0 auto;padding:0 20px}
-    header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,18,32,.75);backdrop-filter:saturate(140%) blur(8px);z-index:50}
-    .hdr{display:flex;align-items:center;justify-content:space-between;height:64px}
-    .brand{display:flex;align-items:center;gap:10px;font-weight:800}
-    .badge{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,#3b82f6,#22d3ee)}
-    .layout{display:grid;grid-template-columns:1fr;gap:20px;margin-top:24px}
-    @media (min-width: 960px){.layout{grid-template-columns:260px 1fr}}
-    nav{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;position:sticky;top:84px}
-    .menu{list-style:none;margin:0;padding:0}
-    .menu li{border-bottom:1px dashed var(--line)}
-    .menu li:last-child{border-bottom:0}
-    .menu a{display:block;padding:10px 8px;color:var(--text)}
-    .menu a:hover{background:rgba(255,255,255,.03);border-radius:8px}
-    main{min-height:60vh}
-    section{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:18px}
-    h1{font-size:clamp(26px,4.5vw,40px);margin:0}
-    h2{font-size:clamp(20px,3vw,26px);margin:0 0 8px}
-    h3{margin:6px 0 6px;font-size:18px}
-    .hero{padding:20px 18px 10px}
-    .grid{display:grid;gap:14px}
-    .grid-2{grid-template-columns:1fr}
-    @media (min-width:900px){.grid-2{grid-template-columns:1fr 1fr}}
-    .pill{display:inline-block;font-size:12px;border:1px solid var(--line);padding:3px 8px;border-radius:999px;color:var(--muted)}
-    .muted{color:var(--muted)}
-    .list{margin:0;padding-left:18px}
-    .timeline{border-left:2px solid var(--line);padding-left:12px}
-    .t{margin:10px 0}
-    .card{border:1px solid var(--line);border-radius:12px;padding:14px;background:rgba(0,0,0,.08)}
-    .btn{display:inline-block;margin-right:8px;margin-top:8px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:#1a2540;color:#e6edf6;text-decoration:none}
-    .btn.primary{background:linear-gradient(135deg,#4ea3ff,#7dd3fc);color:#06223b;border:0;font-weight:700}
-    footer{border-top:1px solid var(--line);margin-top:28px;padding:18px 0 40px;color:var(--muted)}
-    .two-col{display:grid;gap:14px;grid-template-columns:1fr}
-    @media (min-width:900px){.two-col{grid-template-columns:1.2fr .8fr}}
-    .note{font-size:13px;color:var(--muted)}
-    .kbd{font-family:ui-monospace,Menlo,Consolas,monospace;background:#0a0f1a;border:1px solid var(--line);padding:1px 6px;border-radius:6px}
-  </style>
+  <title>Home — ENFIELD Conference 2026</title>
+  <meta name="description" content="International Conference on Artificial Intelligence — July 2026." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta property="og:title" content="Home — ENFIELD Conference 2026" />
+  <meta property="og:description" content="International Conference on Artificial Intelligence — July 2026." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://horizonenfield.github.io/conference2026/" />
+  <meta property="og:image" content="https://horizonenfield.github.io/conference2026/assets/og.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"/>
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/script.js"></script>
 </head>
 <body>
-<header>
-  <div class="wrap hdr">
-    <div class="brand"><span class="badge" aria-hidden="true"></span> ENFIELD Conference 2026</div>
-    <div class="muted">International Conference on AI • 2026</div>
+<header class="header">
+  <div class="wrap header__inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="Logo" class="brand__logo" />
+      <span class="brand__text">ENFIELD Conference 2026</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+      <ul id="navMenu" class="nav__menu">
+        <li><a data-nav href="index.html">Home</a></li>
+        <li><a data-nav href="program.html">Program</a></li>
+        <li><a data-nav href="topics.html">Topics</a></li>
+        <li><a data-nav href="dates.html">Dates &amp; Registration</a></li>
+        <li><a data-nav href="submissions.html">Submissions</a></li>
+        <li><a data-nav href="committees.html">Committees</a></li>
+        <li><a data-nav href="keynotes.html">Keynotes</a></li>
+        <li><a data-nav href="venue.html">Venue</a></li>
+        <li><a data-nav href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme" id="themeToggle" aria-label="Toggle theme">🌗</button>
   </div>
 </header>
+<main class="main">
+<section class="hero">
+  <div class="wrap">
+    <span class="pill">Conference Announcement</span>
+    <h1>ENFIELD Conference 2026</h1>
+    <p class="subtitle">International Conference on Artificial Intelligence — <strong>July 2026</strong></p>
+    <div class="cta-row">
+      <a class="btn btn--primary" href="submissions.html">Submit a Paper</a>
+      <a class="btn" href="dates.html">Important Dates</a>
+      <a class="btn" href="topics.html">Topics</a>
+    </div>
+  </div>
+</section>
 
-<div class="wrap layout">
-  <!-- Left menu (like SPECOM) -->
-  <nav>
-    <ul class="menu">
-      <li><a href="#main">Main</a></li>
-      <li><a href="#program">Program</a></li>
-      <li><a href="#posters">Posters</a></li>
-      <li><a href="#topics">Topics</a></li>
-      <li><a href="#dates">Dates &amp; Registration</a></li>
-      <li><a href="#submissions">Submissions</a></li>
-      <li><a href="#committees">Committees</a></li>
-      <li><a href="#keynotes">Keynotes</a></li>
-      <li><a href="#venue">Venue</a></li>
-      <li><a href="#contacts">Contacts</a></li>
-      <li><a href="#history">History</a></li>
+<section class="wrap grid grid--2">
+  <article class="card">
+    <h2>About the Conference</h2>
+    <p>ENFIELD Conference is a cross-disciplinary forum for cutting-edge AI research and applications spanning speech &amp; language technologies, trustworthy AI, multimodal learning, and deployments in energy, healthcare, manufacturing, and space.</p>
+    <ul class="list">
+      <li>Proceedings: <em>TBD</em> (with DOIs)</li>
+      <li>Review: Double-blind, at least two reviews per paper</li>
+      <li>Tracks: Foundations • Speech/Language • Trustworthy/Secure • Applications</li>
     </ul>
-  </nav>
+  </article>
+  <aside class="card">
+    <h2>Latest Announcement</h2>
+    <p><strong>TBD</strong> — Paper submission site opens. Please check the templates and dates before submitting.</p>
+    <a class="btn btn--ghost" href="submissions.html">Read submission guidelines</a>
+  </aside>
+</section>
 
-  <!-- Content -->
-  <main>
-    <!-- MAIN -->
-    <section id="main" class="hero">
-      <span class="pill">Conference Announcement</span>
-      <h1>ENFIELD Conference 2026</h1>
-      <p class="muted">International Conference on Artificial Intelligence — <strong><!-- TODO: Dates --></strong> • <strong><!-- TODO: City, Country --></strong></p>
-
-      <div class="grid grid-2">
-        <div class="card">
-          <h2>The conference</h2>
-          <p>
-            ENFIELD Conference is a cross-disciplinary forum for AI research and applications, spanning speech & language technologies, trustworthy AI, multimodal learning, and real-world deployments in energy, healthcare, manufacturing, and space.
-          </p>
-          <p class="note">Proceedings publisher & indexing: <!-- TODO: e.g., Springer LNAI / IEEE Xplore (to be confirmed) --></p>
-          <a class="btn primary" href="#submissions">Submit a paper</a>
-          <a class="btn" href="#dates">Important dates</a>
-        </div>
-        <div class="card">
-          <h2>Organizers</h2>
-          <ul class="list">
-            <li><!-- TODO: Lead org --> ENFIELD Consortium</li>
-            <li><!-- TODO: Host university --> Budapest University of Technology and Economics (BME)</li>
-            <li><!-- TODO: Co-organizer(s) --> Partner universities & industry</li>
-          </ul>
-          <h3 style="margin-top:10px">Supporters</h3>
-          <ul class="list">
-            <li><!-- TODO: Supporter 1 --> International Speech Communication Association (ISCA)</li>
-            <li><!-- TODO: Publisher --> Proceedings by <!-- TODO --></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROGRAM -->
-    <section id="program">
-      <h2>Program</h2>
-      <p class="muted">The detailed schedule will be posted after notifications. A high-level outline is below.</p>
-      <div class="two-col">
-        <div class="card">
-          <h3>Outline</h3>
-          <ul class="list">
-            <li>Day 1 — Opening, Keynote #1, Oral Sessions A–B, Welcome Reception</li>
-            <li>Day 2 — Keynote #2, Oral Sessions C–D, Poster Session #1</li>
-            <li>Day 3 — Keynote #3, Oral Sessions E–F, Poster Session #2, Closing</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Presentation formats</h3>
-          <ul class="list">
-            <li>Oral talks: 12–15 mins (+3 mins Q&A)</li>
-            <li>Posters: A0 portrait (recommended), mounting materials on site</li>
-            <li>Hybrid: remote presentations supported (on-site attendance encouraged)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- POSTERS -->
-    <section id="posters">
-      <h2>Posters</h2>
-      <p>Poster sessions will be organized by topic clusters. Detailed timing will appear in the final program.</p>
-    </section>
-
-    <!-- TOPICS -->
-    <section id="topics">
-      <h2>Topics</h2>
-      <div class="grid grid-2">
-        <div class="card">
-          <h3>Core AI</h3>
-          <ul class="list">
-            <li>Representation learning, transformers, diffusion models</li>
-            <li>Optimization, generalization, robustness</li>
-            <li>Multimodal & retrieval-augmented learning</li>
-            <li>Efficient/green AI, on-device AI</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Speech & Language</h3>
-          <ul class="list">
-            <li>ASR, TTS, speech enhancement & separation</li>
-            <li>Prosody, paralinguistics, emotion & style</li>
-            <li>Dialogue systems, LLMs, evaluation & safety</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Trustworthy & Secure AI</h3>
-          <ul class="list">
-            <li>Interpretability, privacy, auditability</li>
-            <li>Adversarial ML, watermarking, deepfake detection</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Applications</h3>
-          <ul class="list">
-            <li>Healthcare & biosignals (incl. EEG/iEEG BCI)</li>
-            <li>Energy, industry & safety systems</li>
-            <li>Manufacturing & space</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- DATES & REGISTRATION -->
-    <section id="dates">
-      <h2>Important dates &amp; registration</h2>
-      <div class="grid grid-2">
-        <div class="card">
-          <h3>Deadlines (AoE)</h3>
-          <div class="timeline">
-            <div class="t"><strong>Paper submission:</strong> <!-- TODO --></div>
-            <div class="t"><strong>Notification:</strong> <!-- TODO --></div>
-            <div class="t"><strong>Camera-ready:</strong> <!-- TODO --></div>
-            <div class="t"><strong>Early registration:</strong> <!-- TODO --></div>
-            <div class="t"><strong>Conference:</strong> <!-- TODO --></div>
-          </div>
-          <p class="note">All deadlines are 23:59 AoE unless otherwise stated.</p>
-        </div>
-        <div class="card">
-          <h3>Registration</h3>
-          <p>Details and fees will be posted after acceptance notifications.</p>
-          <a class="btn" href="#" target="_blank" rel="noopener"><!-- TODO: add registration link -->Registration portal</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SUBMISSIONS -->
-    <section id="submissions">
-      <h2>Submissions</h2>
-      <div class="grid grid-2">
-        <div class="card">
-          <h3>Guidelines</h3>
-          <ul class="list">
-            <li>Single PDF, anonymized (double-blind)</li>
-            <li>Length: Full papers <!-- TODO: e.g., 10–12 pages -->; Short papers <!-- TODO: e.g., 4–6 pages --> (refs excluded)</li>
-            <li>Original work only; not under review elsewhere</li>
-            <li>At least two independent reviews per paper</li>
-          </ul>
-          <p class="note">Templates: <a href="#" target="_blank" rel="noopener">LaTeX (Overleaf)</a> • <a href="#" target="_blank" rel="noopener">Word</a></p>
-        </div>
-        <div class="card">
-          <h3>Submit</h3>
-          <p>Use the submission system below:</p>
-          <p><a class="btn primary" href="#" target="_blank" rel="noopener">Open submission portal</a></p>
-          <p class="note">Having trouble? Email the organizers at <a href="mailto:info@example.org">info@example.org</a></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- COMMITTEES -->
-    <section id="committees">
-      <h2>Committees</h2>
-      <div class="grid grid-2">
-        <div class="card">
-          <h3>Organizing Committee</h3>
-          <ul class="list">
-            <li><strong>General Chair:</strong> <!-- TODO --></li>
-            <li><strong>Program Chairs:</strong> <!-- TODO --></li>
-            <li><strong>Local Arrangements:</strong> <!-- TODO --></li>
-            <li><strong>Web &amp; Publicity:</strong> <!-- TODO --></li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Program Committee</h3>
-          <p class="muted">TBA</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- KEYNOTES -->
-    <section id="keynotes">
-      <h2>Keynotes</h2>
-      <div class="grid grid-2">
-        <div class="card">
-          <h3><!-- TODO: Speaker 1 --></h3>
-          <p class="muted"><!-- Affiliation & title --></p>
-        </div>
-        <div class="card">
-          <h3><!-- TODO: Speaker 2 --></h3>
-          <p class="muted"><!-- Affiliation & title --></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- VENUE -->
-    <section id="venue">
-      <h2>Venue</h2>
-      <div class="grid grid-2">
-        <div class="card">
-          <h3>Location</h3>
-          <p><!-- TODO: Venue name, address, city, country --></p>
-          <p class="note">Hybrid participation supported; on-site attendance encouraged.</p>
-        </div>
-        <div class="card">
-          <h3>Visa & Letters</h3>
-          <p>Invitation letters are available upon request for accepted papers and registered authors.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTS -->
-    <section id="contacts">
-      <h2>Contacts</h2>
-      <div class="grid grid-2">
-        <div class="card">
-          <h3>General inquiries</h3>
-          <p>Email: <a href="mailto:info@example.org">info@example.org</a> • GitHub: <a href="https://github.com/horizonENFIELD/conference2026" target="_blank" rel="noopener">horizonENFIELD/conference2026</a></p>
-        </div>
-        <div class="card">
-          <h3>Social & updates</h3>
-          <p><!-- TODO: newsletter form or social links --></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- HISTORY -->
-    <section id="history">
-      <h2>History</h2>
-      <p class="muted">Add a short paragraph about the series history (origins, notable locations, publisher, community), similar to how SPECOM highlights its long tradition.</p>
-    </section>
-
-    <section>
-      <h2>Latest announcement</h2>
-      <p><strong><!-- TODO: Date --></strong> — Paper submission site is now open. Please check the templates and dates before submitting.</p>
-    </section>
-
-    <section>
-      <h2>Supporters</h2>
-      <ul class="list">
-        <li><!-- TODO: Publisher (e.g., Springer LNAI) --></li>
-        <li><!-- TODO: Associations (e.g., ISCA) --></li>
-      </ul>
-    </section>
-
-    <footer>
-      <div>© 2026 ENFIELD • Built on GitHub Pages • Last updated: <span id="lastUpdated"></span></div>
-    </footer>
-  </main>
-</div>
-
-<script>
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    a.addEventListener('click',e=>{
-      const id=a.getAttribute('href').slice(1);
-      const t=document.getElementById(id);
-      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}
-    })
-  });
-  // Footer date
-  const d=new Date(); 
-  document.getElementById('lastUpdated').textContent=d.toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'});
-</script>
+<section class="wrap grid grid--3">
+  <div class="card">
+    <h3>Key Dates</h3>
+    <ul class="timeline">
+      <li><strong>Submission:</strong> TBD (AoE)</li>
+      <li><strong>Notification:</strong> TBD</li>
+      <li><strong>Camera-ready:</strong> TBD</li>
+      <li><strong>Conference:</strong> July 2026</li>
+    </ul>
+    <a class="btn" href="dates.html">All deadlines</a>
+  </div>
+  <div class="card">
+    <h3>Topics</h3>
+    <p>From transformers and diffusion models to EEG/BCI and industrial AI.</p>
+    <a class="btn" href="topics.html">See the full list</a>
+  </div>
+  <div class="card">
+    <h3>Venue</h3>
+    <p>On-site in <em>TBD City, Country</em> with hybrid options.</p>
+    <a class="btn" href="venue.html">Travel &amp; logistics</a>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div>© 2026 ENFIELD • Built on GitHub Pages</div>
+    <div>Last updated: <span id="lastUpdated"></span></div>
+  </div>
+</footer>
 </body>
 </html>
