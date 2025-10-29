@@ -1,1 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><!-- TODO: Full conference name -->ENFIELD Conference 2026 — Call for Papers</title>
+  <meta name="description" content="Call for Papers for ENFIELD Conference 2026. Topics include AI, Speech, BCI, Trustworthy AI, and more. Submission portal, important dates, and contact." />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Open Graph / Twitter (edit as needed) -->
+  <meta property="og:title" content="ENFIELD Conference 2026 — Call for Papers" />
+  <meta property="og:description" content="Submit your paper to ENFIELD Conference 2026. See topics, dates, and guidelines." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://horizonenfield.github.io/conference2026/" />
+  <!-- TODO: Add a hosted social image and update this URL -->
+  <meta property="og:image" content="https://horizonenfield.github.io/conference2026/og.png" />
+
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #0f172a;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --brand: #0ea5e9;
+      --accent: #22d3ee;
+      --card: #111827;
+      --ring: rgba(34, 211, 238, 0.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); background: rgba(11,18,32,0.7); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: 0.2px; }
+    .brand-badge { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, var(--brand), var(--accent)); box-shadow: 0 0 0 4px rgba(34,211,238,0.15) inset; }
+    .nav a { color: var(--text); opacity: 0.9; margin-left: 18px; }
+    .nav a:hover { opacity: 1; }
+    .hero { padding: 80px 0 40px; background:
+      radial-gradient(1200px 500px at 50% -80px, rgba(34,211,238,0.10), transparent 70%),
+      radial-gradient(900px 400px at 80% 10%, rgba(14,165,233,0.12), transparent 60%); }
+    .hero h1 { font-size: clamp(28px, 5vw, 46px); line-height: 1.1; margin: 0 0 16px; }
+    .subtitle { color: var(--muted); font-size: clamp(14px, 2.6vw, 18px); max-width: 850px; }
+    .badges { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+    .badge { font-size: 12px; padding: 6px 10px; border: 1px solid rgba(255,255,255,0.12); border-radius: 999px; color: var(--muted); }
+    .cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 12px 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.08); background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); color: var(--text); text-decoration: none; transition: transform .05s ease; }
+    .btn:hover { transform: translateY(-1px); }
+    .btn.primary { background: linear-gradient(135deg, var(--brand), var(--accent)); color: #06121c; font-weight: 700; border: none; box-shadow: 0 0 0 6px var(--ring); }
+    section { padding: 40px 0; }
+    h2 { font-size: clamp(22px, 3.5vw, 28px); margin: 0 0 16px; }
+    p { color: var(--text); opacity: 0.95; }
+    .grid { display: grid; gap: 16px; }
+    @media (min-width: 880px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } .grid-2 { grid-template-columns: repeat(2, 1fr); } }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 16px; }
+    .card h3 { margin: 8px 0 6px; font-size: 18px; }
+    .meta { color: var(--muted); font-size: 14px; }
+    ul.clean { list-style: none; margin: 0; padding: 0; }
+    ul.clean li { padding: 6px 0; border-bottom: 1px dashed rgba(255,255,255,0.08); }
+    .pill { display: inline-block; padding: 2px 8px; font-size: 12px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.16); color: var(--muted); }
+    .timeline { border-left: 2px solid rgba(255,255,255,0.1); margin-left: 10px; padding-left: 16px; }
+    .t-item { margin: 10px 0; }
+    .t-item strong { display: inline-block; min-width: 180px; }
+    .footer { padding: 30px 0 60px; color: var(--muted); border-top: 1px solid rgba(255,255,255,0.08); margin-top: 40px; }
+    .note { font-size: 13px; color: var(--muted); }
+    .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; background: #0a0f1a; border: 1px solid rgba(255,255,255,0.08); padding: 2px 6px; border-radius: 6px; }
+    /* Small attention ring for anchors */
+    .anchor { scroll-margin-top: 80px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="brand-badge" aria-hidden="true"></div>
+        <span><!-- TODO: Short brand -->ENFIELD Conference 2026</span>
+      </div>
+      <nav>
+        <a href="#cfp">Call for Papers</a>
+        <a href="#dates">Dates</a>
+        <a href="#topics">Topics</a>
+        <a href="#submission">Submission</a>
+        <a href="#committee">Committee</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="pill">Paper Announcement & CFP</span>
+        <h1><!-- TODO: Headline -->
+          ENFIELD Conference 2026 — Call for Papers
+        </h1>
+        <p class="subtitle">
+          <!-- TODO: One-sentence pitch -->
+          A venue for cutting-edge research in Artificial Intelligence spanning Green, Adaptive, Human-Centric, and Trustworthy AI—plus applications in Energy, Healthcare, Manufacturing, and Space.
+        </p>
+        <div class="badges">
+          <span class="badge"><!-- TODO: City/Country -->Venue: TBD</span>
+          <span class="badge"><!-- TODO: Dates -->Conference Dates: TBD 2026</span>
+          <span class="badge">Time zone: Asia/Baghdad (UTC+3)</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="#submission">Submit Your Paper</a>
+          <a class="btn" href="#cfp">Read CFP</a>
+          <a class="btn" href="#contact">Ask a Question</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="announce" class="anchor">
+      <div class="wrap grid grid-2">
+        <div class="card">
+          <h2>Latest Announcement</h2>
+          <p>
+            <!-- TODO: Replace with your announcement text -->
+            We are pleased to open the paper submission portal. Please review the topics and guidelines below before submitting.
+          </p>
+          <ul class="clean">
+            <li><strong>Submission site:</strong> <!-- TODO: link to EasyChair/HotCRP --> <a href="#">TBD</a></li>
+            <li><strong>Template:</strong> <!-- TODO --> <a href="#">IEEE/ACM LaTeX & Word templates</a></li>
+            <li><strong>Contact:</strong> <a href="mailto:info@example.org">info@example.org</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>At a Glance</h2>
+          <ul class="clean">
+            <li><strong>Submission type:</strong> Full papers (up to <!-- TODO --> 8–10 pages) & short papers (up to <!-- TODO --> 4–6 pages), references excluded.</li>
+            <li><strong>Review:</strong> Double-blind, at least 2 reviewers per paper.</li>
+            <li><strong>Proceedings:</strong> <!-- TODO publisher/indexing --> To be announced (with DOI).</li>
+            <li><strong>Best Paper:</strong> Awards for best paper & student paper.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="cfp" class="anchor">
+      <div class="wrap grid grid-2">
+        <div>
+          <h2>Call for Papers</h2>
+          <p>
+            We invite original, unpublished research contributions addressing foundational methods and real-world deployments in AI. We especially welcome cross-disciplinary works bridging algorithms, systems, and domain applications.
+          </p>
+          <p class="note">Submissions must be anonymous and comply with the formatting guidelines. Papers under review elsewhere are not permitted.</p>
+        </div>
+        <div class="card">
+          <h3>Submission Tracks</h3>
+          <ul class="clean">
+            <li>Track A — Foundations: learning, optimization, data, robustness</li>
+            <li>Track B — Speech, Language & Multimodal AI</li>
+            <li>Track C — Trustworthy, Secure & Responsible AI</li>
+            <li>Track D — AI for Energy & Industrial Systems</li>
+            <li>Track E — AI for Healthcare & Biosignals (incl. BCI)</li>
+            <li>Track F — AI for Manufacturing & Space</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="dates" class="anchor">
+      <div class="wrap grid grid-2">
+        <div>
+          <h2>Important Dates</h2>
+          <div class="timeline">
+            <!-- TODO: Replace all TBD with your exact dates; keep timezone note -->
+            <div class="t-item"><strong>Paper submission deadline:</strong> <span>🔜 TBD (AoE)</span></div>
+            <div class="t-item"><strong>Author notification:</strong> <span>TBD</span></div>
+            <div class="t-item"><strong>Camera-ready due:</strong> <span>TBD</span></div>
+            <div class="t-item"><strong>Conference dates:</strong> <span>TBD 2026</span></div>
+          </div>
+          <p class="note">All deadlines are 23:59 AoE unless stated otherwise. For logistics, the on-site schedule follows Asia/Baghdad (UTC+3).</p>
+        </div>
+        <div class="card">
+          <h3>Author Toolkit</h3>
+          <ul class="clean">
+            <li>Templates: <!-- TODO --> <a href="#">LaTeX (Overleaf)</a> · <a href="#">Word</a></li>
+            <li>Policies: No dual submission; anonymized PDF; ethics declarations where applicable.</li>
+            <li>Artifacts: (Optional) Code/data appendix or permanent repository link.</li>
+            <li>Demo/Showcase: (Optional) Indicate “Demo” in the submission form.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="topics" class="anchor">
+      <div class="wrap">
+        <h2>Topics of Interest</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Core AI</h3>
+            <ul class="clean">
+              <li>Representation learning, transformers, diffusion models</li>
+              <li>Optimization & generalization</li>
+              <li>Multimodal learning & alignment</li>
+              <li>Efficient/green AI, edge AI</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Speech & Language</h3>
+            <ul class="clean">
+              <li>ASR, TTS, speech enhancement & separation</li>
+              <li>Prosody, paralinguistics, emotion & style</li>
+              <li>LLMs, dialogue systems, retrieval-augmented generation</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Trustworthy & Secure AI</h3>
+            <ul class="clean">
+              <li>Robustness, privacy, interpretability</li>
+              <li>Safety, alignment, evaluation</li>
+              <li>Adversarial ML, watermarking, deepfake detection</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Healthcare & BCI</h3>
+            <ul class="clean">
+              <li>EEG/MEG/iEEG decoding, brain-to-speech</li>
+              <li>Medical imaging & biosignal processing</li>
+              <li>Clinical decision support & monitoring</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Energy & Industry</h3>
+            <ul class="clean">
+              <li>Predictive maintenance, anomaly detection</li>
+              <li>Process optimization & control</li>
+              <li>Safety systems & risk modeling</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Manufacturing & Space</h3>
+            <ul class="clean">
+              <li>Quality inspection, robotics & vision</li>
+              <li>Autonomous systems & mission planning</li>
+              <li>Remote sensing & geospatial AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="submission" class="anchor">
+      <div class="wrap grid grid-2">
+        <div>
+          <h2>Submission Guidelines</h2>
+          <ol>
+            <li>Prepare your manuscript using the official template (see “Author Toolkit”).</li>
+            <li>Ensure <strong>double-blind</strong> formatting: remove author names, affiliations, and self-identifying references.</li>
+            <li>Page limits: <!-- TODO --> Full: 8–10 pages; Short: 4–6 pages (excluding references & appendices).</li>
+            <li>Upload as a single PDF to the submission system.</li>
+            <li>Optional artifacts (code/data) may be linked in an anonymous appendix.</li>
+          </ol>
+          <p class="note">Ethics: Declare human/animal data usage, consent, and risk mitigation where applicable.</p>
+        </div>
+        <div class="card">
+          <h3>Submit</h3>
+          <p>Ready to go? Submit via our portal.</p>
+          <!-- TODO: Replace # with your submission URL (e.g., EasyChair/HotCRP) -->
+          <p><a class="btn primary" href="#" target="_blank" rel="noopener">Open Submission Portal</a></p>
+          <p class="meta">Having trouble? Email: <a href="mailto:info@example.org">info@example.org</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="committee" class="anchor">
+      <div class="wrap grid grid-2">
+        <div>
+          <h2>Organizing Committee</h2>
+          <ul class="clean">
+            <!-- TODO: Replace with real names/roles -->
+            <li><strong>General Chair:</strong> Name (Affiliation)</li>
+            <li><strong>Program Chairs:</strong> Name (Affiliation), Name (Affiliation)</li>
+            <li><strong>Industry Chair:</strong> Name (Affiliation)</li>
+            <li><strong>Publicity & Web:</strong> Name (Affiliation)</li>
+            <li><strong>Local Arrangements:</strong> Name (Affiliation)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Program Committee</h3>
+          <p class="meta">To be announced.</p>
+          <!-- TODO: add names or link to PC page -->
+        </div>
+      </div>
+    </section>
+
+    <section id="venue" class="anchor">
+      <div class="wrap grid grid-2">
+        <div>
+          <h2>Venue</h2>
+          <p><!-- TODO: city, venue name, exact address -->TBD — City, Country</p>
+          <p class="note">Travel & accommodation details will be posted after notifications.</p>
+        </div>
+        <div class="card">
+          <h3>Visa & Letters</h3>
+          <p>Invitation letters will be provided upon request for accepted papers and registered authors.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="anchor">
+      <div class="wrap grid grid-2">
+        <div>
+          <h2>Contact</h2>
+          <p>Questions about submissions or logistics? We’re here to help.</p>
+          <ul class="clean">
+            <li><strong>Email:</strong> <!-- TODO --> <a href="mailto:info@example.org">info@example.org</a></li>
+            <li><strong>GitHub repo:</strong> <a href="https://github.com/horizonENFIELD/conference2026" target="_blank" rel="noopener">horizonENFIELD/conference2026</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Newsletter / Updates</h3>
+          <p><!-- TODO: Add a link to a form or mailing list -->Subscribe to receive date updates and program announcements.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap footer">
+      <div>© 2026 <!-- TODO: Organization name -->ENFIELD. All rights reserved.</div>
+      <div class="meta">Built with GitHub Pages. Last updated: <span id="lastUpdated"></span></div>
+    </div>
+  </main>
+
+  <script>
+    // Show build date in footer (client-side)
+    (function() {
+      const el = document.getElementById('lastUpdated');
+      if (el) el.textContent = new Date().toLocaleDateString(undefined, {year:'numeric', month:'short', day:'numeric'});
+    })();
+    // Smooth-scroll for same-page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id = a.getAttribute('href').slice(1);
+        const target = document.getElementById(id);
+        if (target) { e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+  </script>
+</body>
+</html>
 
