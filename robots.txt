@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://horizonenfield.github.io/conference2026/sitemap.xml
